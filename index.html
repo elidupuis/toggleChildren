@@ -12,28 +12,43 @@
 	<script src="jquery.toggleChildren.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8">
 		$(function(){
-			$('.test').preventChildren({
+			$('.example1').toggleChildren({
 				items:7
 			});
-			$('.test2').preventChildren({
-				items:11,
-				viewMore:'View more items, dawg!',
-				viewLess:'Hide the items, dawg!'
+			$('.example2').toggleChildren({
+				items: 7,
+				reverse: true
 			});
-			$('#testdiv').preventChildren({
+			$('.example3').toggleChildren({
+				items:11,
+				viewMore:'Show all #ALL# items',
+				viewLess:'Hide the items, dawg!',
+				appendToggler: function(elm, link) {
+					elm.prepend(link);
+				}
+			});
+			$('.example4').toggleChildren({
+				items:3,
+				createToggler: function(more, less) {
+					return $('<span>'+more+'</span>');
+				}
+			});			
+			$('#testdiv').toggleChildren({
 				viewMore:'Show More',
 				viewLess:'Show Less',
 				moreWrapper:'<p class="wrapper">'
 			});
 		});
 	</script>
-	<title>Limit List Size tests</title>
+	<title>jquery.toggleChildren demo</title>
 	
 </head>
 
 <body>
 
-<ul class="test">
+<h1>jquery.toggleChildren</h1>
+
+<ul class="example1">
 	<li>one</li>
 	<li>two</li>
 	<li>three</li>
@@ -52,7 +67,7 @@
 	<li>sixteen</li>
 </ul>
 
-<ul class="test">
+<ul class="example2">
 	<li>one</li>
 	<li>two</li>
 	<li>three</li>
@@ -71,7 +86,7 @@
 	<li>sixteen</li>
 </ul>
 
-<ul class="test2">
+<ul class="example3">
 	<li>one</li>
 	<li>two</li>
 	<li>three</li>
@@ -88,6 +103,19 @@
 	<li>fourteen</li>
 	<li>fifteen</li>
 	<li>sixteen</li>
+</ul>
+
+<ul class="example4">
+	<li>one</li>
+	<li>two</li>
+	<li>three</li>
+	<li>four</li>
+	<li>five</li>
+	<li>six</li>
+	<li>seven</li>
+	<li>eight</li>
+	<li>nine</li>
+	<li>ten</li>
 </ul>
 
 <div id="testdiv">
