@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<style type="text/css" media="screen">
+		ul 		{ float:left; margin:0 0 0 20px; }
+		#testdiv	{ float: left; clear: both; margin-top: 2em; }
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.toggleChildren.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+			$('.test').preventChildren({
+				items:7
+			});
+			$('.test2').preventChildren({
+				items:11,
+				viewMore:'View more items, dawg!',
+				viewLess:'Hide the items, dawg!'
+			});
+			$('#testdiv').preventChildren({
+				viewMore:'Show More',
+				viewLess:'Show Less',
+				moreWrapper:'<p class="wrapper">'
+			});
+		});
+	</script>
+	<title>Limit List Size tests</title>
+	
+</head>
+
+<body>
+
+<ul class="test">
+	<li>one</li>
+	<li>two</li>
+	<li>three</li>
+	<li>four</li>
+	<li>five</li>
+	<li>six</li>
+	<li>seven</li>
+	<li>eight</li>
+	<li>nine</li>
+	<li>ten</li>
+	<li>eleven</li>
+	<li>twelve</li>
+	<li>thirteen</li>
+	<li>fourteen</li>
+	<li>fifteen</li>
+	<li>sixteen</li>
+</ul>
+
+<ul class="test">
+	<li>one</li>
+	<li>two</li>
+	<li>three</li>
+	<li>four</li>
+	<li>five</li>
+	<li>six</li>
+	<li>seven</li>
+	<li>eight</li>
+	<li>nine</li>
+	<li>ten</li>
+	<li>eleven</li>
+	<li>twelve</li>
+	<li>thirteen</li>
+	<li>fourteen</li>
+	<li>fifteen</li>
+	<li>sixteen</li>
+</ul>
+
+<ul class="test2">
+	<li>one</li>
+	<li>two</li>
+	<li>three</li>
+	<li>four</li>
+	<li>five</li>
+	<li>six</li>
+	<li>seven</li>
+	<li>eight</li>
+	<li>nine</li>
+	<li>ten</li>
+	<li>eleven</li>
+	<li>twelve</li>
+	<li>thirteen</li>
+	<li>fourteen</li>
+	<li>fifteen</li>
+	<li>sixteen</li>
+</ul>
+
+<div id="testdiv">
+	<h2>headings are ok</h2>
+	
+	<p>Blandit facit in placerat adipiscing zzril. Claritatem iusto ex claritatem consectetuer facer. Vel wisi doming vero ii laoreet. Duis ut iriure eleifend dignissim et.</p>
+
+	<p>Mazim in volutpat consuetudium delenit adipiscing. Iis cum dolor quam nobis luptatum. Littera luptatum qui veniam esse imperdiet. Iriure qui lectores iriure seacula nobis.</p>
+	
+	<blockquote><p>In fact all elements are ok. All children are treated equally!</p> <cite>And nested children are ignored too.</cite></blockquote>  
+
+	<p>
+	Praesent litterarum accumsan nulla molestie facit. Et veniam ut est id me. Et elit anteposuerit dolore qui vel. Hendrerit imperdiet feugiat per soluta saepius. 
+	</p>
+
+	<p>
+	Option saepius notare Investigationes eodem tempor. Eodem nisl at facilisi claritas laoreet. Qui parum elit doming consequat quod. Sit nostrud molestie eum mutationem feugiat. 
+	</p>
+
+	<p>
+	Dolore in typi dolor dignissim vel. Dolore non processus quis ex nibh. Praesent aliquip quod iriure autem me. Veniam molestie in lius nobis elit. 
+	</p>
+
+	<p>
+	Dolore eum seacula legunt eum delenit. Possim parum parum facilisis tation sequitur. Eorum aliquip euismod claritas formas magna. Velit mutationem volutpat cum iis exerci. 
+	</p>
+
+	<p>
+	Littera et quam putamus qui facer. Euismod nunc luptatum placerat quis blandit. Magna nonummy lectorum imperdiet eodem ex. Consuetudium sit at suscipit ii in. 
+	</p>
+
+	<p>
+	Qui mazim iis claritatem duis legunt. Et ii in possim gothica lectorum. Cum autem qui dolore euismod qui. Qui nunc modo feugait aliquam quam. 
+	</p>
+
+	<p>
+	Eros ex parum doming legunt eu. Seacula nihil luptatum odio vero dolor. Delenit nunc nonummy ad nulla videntur. Legere imperdiet habent etiam nobis consectetuer. 
+	</p>
+
+	<p>
+	Volutpat quam diam legentis eorum elit. Nibh nunc est commodo dolore nobis. At congue claram videntur ut assum. Anteposuerit imperdiet sequitur eorum ipsum nostrud. 
+	</p>
+
+	<p>
+	Per notare modo ullamcorper soluta in. Soluta tempor exerci claritas tincidunt et. Fiant mazim parum ea dolor zzril. Aliquip elit lectorum mirum putamus quam. 
+	</p>
+
+	<p>
+	Parum litterarum minim lorem putamus esse. Videntur laoreet quod dolor dolore consequat. Magna est suscipit luptatum nihil tation. Modo tincidunt quam suscipit nisl usus. 
+	</p>
+
+	<p>
+	Non ad diam congue quod gothica. Diam sed saepius quam wisi decima.
+	</p>
+</div>
+
+
+</body>
+</html>
